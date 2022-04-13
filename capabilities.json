@@ -1,15 +1,134 @@
 {
     "dataRoles": [
         {
-            "displayName": "Measure Data",
+            "displayName": "Measure",
             "name": "measure",
             "kind": "Measure"
         }
     ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                { "measure": { "max": 1 } }
+            ],
+            "single": {
+                "role": "measure"
+            }
+        }
+    ],
     "objects": {
+        "defaultOptions": {
+            "displayName": "Options",
+            "properties": {
+                "defaultNull": {
+                    "displayName": "Default for nulls",
+                    "description": "Display value for nulls",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "calloutvalue": {
+            "displayName": "Data label",
+            "properties": {
+                "fontColor": {
+                    "displayName": "Color",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "fontSize": {
+                    "displayName": "Maximum Text Size",
+                    "type": { "formatting": { "fontSize": true } },
+                    "description": "Font will be adjusted to smallest of calculated and maximum size."
+                },
+                "verticalOffset": {
+                    "displayName": "Vertical offset",
+                    "description": "Select the percentage of vertical offset, leave at 0 for default offset",
+                    "placeHolderText": "Auto",
+                    "type": {
+                        "numeric": true
+                    },
+                    "suppressFormatPainterCopy": true
+                },                
+                "fontFamily": {
+                    "displayName": "Font family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "bold": {
+                    "displayName": "Bold",
+                    "type": { "bool": true }
+                },
+                "italic": {
+                    "displayName": "Italic",
+                    "type": { "bool": true }
+                },
+                "labelDisplayUnits": {
+                    "displayName": "Display units",
+                    "description": "Select the unit (thousands, millions, billions, etc.)",
+                    "type": {
+                        "formatting": {
+                            "labelDisplayUnits": true
+                        }
+                    }
+                },
+                "labelPrecision": {
+                    "displayName": "Value decimal places",
+                    "description": "Select the number of decimal places to display",
+                    "placeHolderText": "Auto",
+                    "type": {
+                        "numeric": true
+                    },
+                    "suppressFormatPainterCopy": true
+                }
+            }
+        },                    
+        "categorylabel": {
+            "displayName": "Category label",
+            "properties": {
+                "show": {
+                    "displayName": "Show",
+                    "type": { "bool": true }
+                },
+                "fontColor": {
+                    "displayName": "Color",
+                    "type": { "fill": { "solid": { "color": true } } }
+                },
+                "fontSize": {
+                    "displayName": "Maximum Text Size",
+                    "type": { "formatting": { "fontSize": true } },
+                    "description": "Font will be adjusted to smallest of calculated and maximum size."
+                },
+                "fontFamily": {
+                    "displayName": "Font family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "bold": {
+                    "displayName": "Bold",
+                    "type": { "bool": true }
+                },
+                "italic": {
+                    "displayName": "Italic",
+                    "type": { "bool": true }
+                }                           
+            }
+        },                    
         "circle": {
             "displayName": "Circle",
             "properties": {
+                "show": {
+                    "displayName": "Show Circle",
+                    "type": {
+                        "bool": true
+                    }
+                },                
                 "circleColor": {
                     "displayName": "Color",
                     "description": "The fill color of the circle.",
@@ -29,20 +148,7 @@
                     }
                 }
             }
-        }
+        }        
     },
-    "dataViewMappings": [
-        {
-            "conditions": [
-                {
-                    "measure": {
-                        "max": 1
-                    }
-                }
-            ],
-            "single": {
-                "role": "measure"
-            }
-        }
-    ]
+    "supportsHighlight": true    
 }

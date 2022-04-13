@@ -1,25 +1,25 @@
 {
-  "visual": {
-    "name": "circlecard",
-    "displayName": "circlecard",
-    "guid": "circlecard4AD8D1E1DA0943AEB18E1E59B92001A9",
-    "visualClassName": "Visual",
-    "version": "1.0.0",
-    "description": "",
-    "supportUrl": "",
-    "gitHubUrl": ""
-  },
-  "apiVersion": "2.6.0",
-  "author": {
-    "name": "",
-    "email": ""
-  },
-  "assets": {
-    "icon": "assets/icon.png"
-  },
-  "externalJS": [
-  ],
-  "style": "style/visual.less",
-  "capabilities": "capabilities.json",
-  "stringResources": []
+    "visual": {
+        "name": "simpleCard",
+        "displayName": "Simple Card",
+        "guid": "simpleCard208782A0384948BB81E27A26D0199AZZ",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "Displays a formatted measure value in a card, with an optional display value for (Blank). Based on MS circleCard",
+        "supportUrl": "chris.palmer.nz@gmail.com",
+        "gitHubUrl": "https://github.com/ChrisPalmerNZ/simpleCard"
+    },
+    "apiVersion": "3.8.0",
+    "author": {
+        "name": "Chris Palmer",
+        "email": "chris.palmer.nz@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": [],
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
 }

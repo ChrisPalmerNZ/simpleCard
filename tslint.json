@@ -1,4 +1,3 @@
-
 {
     "extends": "tslint-microsoft-contrib/recommended",
     "rulesDirectory": [
@@ -7,4 +6,4 @@
     "rules": {
         "no-relative-imports": false
     }
-   }
+}
