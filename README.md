@@ -14,9 +14,50 @@ Additional functionality:
 - Enables the vertical position of the Data Label to be specified
 
 ### Support
+    
 Please leave requests via Github, or contact chris.palmer.nz@gmail.com for any specific support
+
 ----
 ## Detailed descriptions
+
+### Options
+    
+![Options](https://github.com/ChrisPalmerNZ/simpleCard/blob/master/Images/options.PNG?raw=true)
+   
+The options allow a replacement value for the (Blank) normally used for nulls, the default is Nil
+
+</br>
+
+### Data label
+
+![Data label](https://github.com/ChrisPalmerNZ/simpleCard/blob/master/Images/Data_label.PNG?raw=true)
+
+- Maximum text size allows the text size to be limited to the specified maximum as cards are enlarged
+    - default is 38pt
+    - set to 60 to allow for the largest possible size
+- Vertical offset allows the vertical placement of the Data label to be altered. It is a percentage
+- Color, Font family, Bold, Italic, Display Units and Value decimal places are all in accordance with the standard Card visual
+    
+</br>
+
+### Category label
+
+![Category label](https://github.com/ChrisPalmerNZ/simpleCard/blob/master/Images/Category_label.PNG?raw=true)
+
+- Category label can be turned off
+- Default is 14pt
+- As with the Data label, maximum text size can be set
+- Color, Font family, Bold, Italic are in accordance with the standard Card visual
+    
+</br>
+
+### Circle
+
+![Circle](https://github.com/ChrisPalmerNZ/simpleCard/blob/master/Images/circle.PNG?raw=true)
+
+- Per the original Circle option from the Circle Card visual
+- Allows color and circle thickness to be specified
+- Can be turned off, and is off by default
 
 ----
 
