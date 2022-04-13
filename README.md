@@ -7,13 +7,16 @@ As with the Circle Card visual, it can render the text of a Power BI card visual
 
 Additional functionality:
 - Allows a new default to be specified instead of (Blank) if filter conditions result in no data
-- The circle feature is optional and by default is not turned on 
+- The circle feature is optional and by default is not turned on
+- Adds extra functionality to Data and Category labels, following the standard Card visual 
 - Maximums for the font sizes of the Data Label and Category Label can be specified 
     - This enables the font size to be smaller that the currently calculated value, to enforce uniformity of font size between different sized cards 
 - Enables the vertical position of the Data Label to be specified
 
 ### Support
 Please leave requests via Github, or contact chris.palmer.nz@gmail.com for any specific support
+----
+## Detailed descriptions
 
 ----
 
